@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    scrollbar-width: none;
+}
+body::-webkit-scorllbar{
+    display: none;
+}
+
+.home{
+    width: 100wh;
+    height: 100vh;
+}
+.nav-bar{
+    background-color:cadetblue;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .logo-img{
+    margin-right:45%;
+}
+
+
+.nav-bar .logo-img a img{
+    width:150px;
+    height:auto;
+
+
+}
+.nav-bar a{
+    text-decoration: none;
+    font-size: 18px;
+    color:aqua;
+    margin: 0 15px;
+    transition: color 0.3s ease-in;
+    margin-right: 14px;
+}
+.nav-bar a:hover{
+    color:black;
+    text-decoration: underline;
+}
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color:blanchedalmond;
+}
+.home-text{
+    flex: 1;
+    padding-right: 50px;
+    text-align: left;
+    width: 45%;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+.home-text h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color:darkslategrey;
+    text-align: center;
+
+}
+.home-text p{
+    font-size: 15px;
+    color:black;
+}
+
+.img1{
+    flex:1;
+    text-align:center;
+    margin-top:-20%
+}
+
+.img1 img{
+    max-width:70%;
+    margin-left:50%;
+    height:350px;
+}
+
+.about-img img{
+    width: 600px;
+    height: auto;
+    position: absolute;
+    right: 700px;
+    margin-top: 3%;
+}
+.about-us{
+    width: 100vw;
+    height: 100vh;
+    width:45%;
+    margin-left:60%;
+}
+.about-us .about-text h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color:cadetblue;
+    text-align: center;
+    text-decoration: underline;
+}
+.about-us .about-text h3{
+    display:flex;
+    justify-content: center;
+    font-size: 25px;
+    color:burlywood;
+    margin-top: 10px;
+}
+.about-us .about-text li{
+    font-size: 15px;
+    margin-top: 1.5%;
+}
+
+.highlight{
+    width: 100vw;
+    height: 100vh;
+}
+.highlight .highlight-text h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color:rgb(63, 63, 41);
+    text-align: center;
+    text-decoration: underline;
+}
+.card-section{
+    font-family: Arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+.card-section .card{
+    background-color: antiquewhite;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    transition: 0.3s ease-in;
+}
+
+.card-section  .card:hover{
+    box-shadow: 0 20px 20px 20px black;
+    margin-top: 7px;
+}
+.card-section  .card img{
+    width: 300px;
+    height: 300px;
+}
+.card-section  .card h2{
+    margin-top:0;
+    text-decoration: underline;
+    color:rgb(43, 69, 43);
+}
+.card-section  .card p{
+    margin-bottom: 0;
+}
+.apply-now{
+    width:100vh;
+    height:100vh;
+}
+.qualification-text h2{
+    font-size: 30px;
+    color:darksalmon;
+    text-decoration: underline;
+    
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.qualification-about-text{
+    margin: 5% 10% 0 10%;
+}
+.qualification-about-text p{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    color:mediumpurple;
+}
+
+.qualification-about-text li{
+    font-size:14.5px;
+    margin-top:2%;
+}
+
+.apply-now .apply-now-text{
+    margin:5% 10%;
+}
+.apply-now .apply-now-text p{
+    font-size: 20px;
+    margin-top: 2%;
+}
+.apply-now .apply-now-text a button{
+    border:none;
+    background: none;
+    padding: 0;
+    margin-top: 3%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor:pointer;
+    outline:none ;
+}
+.apply-now .apply-now-text a .custom-button{
+    background-color:#FF4837;
+    color:white;
+    border-radius: 4px;
+    padding:10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor:pointer;
+    transition: background-color0.3s ease;
+
+}
+.apply-now .apply-now-text a .custom-button:hover{
+    background-color: darkgoldenrod;
+}
+
+.apply-now .apply-now-text .learn-more{
+    margin-left: 60%;
+    color:rgb(72, 62, 43);
+}
+.apply-now .apply-now-text .learn-more:hover{
+    color:chocolate
+}
+.contact-footer{
+    background-color:darkslategray
+}
+.contact-footer .contact-items h2{
+    margin-left: 5%;
+    font-size: 35px;
+    color:white;
+}
+.contact-footer .contact-items p{
+    margin-left: 10%;
+    margin-top: 2%;
+    font-weight: 400;
+    color:white;
+}
+.contact-footer .contact-items.social-icons i{
+    font-size: 25px;
+    margin-left: 5px;
+    color:rgb(70, 57, 47);;
+}
+.footer{
+    background-color: tan;
+    color:white;
+    padding:10px 0;
+    text-align: center;
+}
